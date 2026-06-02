@@ -1,6 +1,6 @@
-# MindCare - Mental Health AI Support Chatbot
+# HealSpace - Mental Health AI Support Chatbot
 
-![MindCare Banner](https://img.shields.io/badge/MindCare-Mental%20Health%20Support-purple?style=for-the-badge)
+![HealSpace Banner](https://img.shields.io/badge/HealSpace-Mental%20Health%20Support-purple?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square)
 ![Flask](https://img.shields.io/badge/Flask-3.0-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
@@ -16,7 +16,7 @@
 
 ### Our Solution
 
-MindCare is a 24/7 AI-powered mental health chatbot designed specifically for India. It provides:
+HealSpace is a 24/7 AI-powered mental health chatbot designed specifically for India. It provides:
 
 - ✅ **Empathetic emotional support** using AI active listening
 - ✅ **Real-time crisis detection** with immediate helpline routing
@@ -194,7 +194,7 @@ http://localhost:5000
 ```
 
 ### First-Time Setup
-- Database (`chatbot.db`) is created automatically on first run
+- Database (`healspace.db`) is created automatically on first run
 - No configuration needed - works out of the box!
 
 ---

@@ -1,5 +1,5 @@
 // ==========================================
-// MINDCARE - ENHANCED SCRIPT
+// HEALSPACE - ENHANCED SCRIPT
 // ==========================================
 
 // Handle Enter key press
@@ -313,6 +313,11 @@ function showCrisis(message) {
     messageDiv.innerHTML = message;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+
+    // Add vibration for emphasis if supported
+    if (window.navigator && window.navigator.vibrate) {
+        window.navigator.vibrate([100, 50, 100]);
+    }
 }
 
 function closeCrisis() {
@@ -322,8 +327,8 @@ function closeCrisis() {
 }
 
 function callHotline() {
-    // US Suicide & Crisis Lifeline
-    window.location.href = 'tel:988';
+    // Kiran Mental Health Helpline (India)
+    window.location.href = 'tel:18005990019';
 }
 
 // ==========================================

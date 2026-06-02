@@ -1,5 +1,5 @@
 """
-Configuration Module - Environment-based settings for MindCare AI
+Configuration Module - Environment-based settings for HealSpace AI
 """
 
 import os
@@ -11,7 +11,7 @@ class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', os.urandom(24).hex())
     
     # Database configuration
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///mindcare.db')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///healspace.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # Session configuration

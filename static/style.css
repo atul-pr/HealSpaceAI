@@ -1,5 +1,5 @@
 /* ==========================================
-   MODERN MINDCARE - ENHANCED STYLES
+   MODERN HEALSPACE - ENHANCED STYLES
    ========================================== */
 
 * {
@@ -872,8 +872,8 @@ body {
     background: white;
     border-radius: 30px;
     padding: 50px;
-    max-width: 500px;
-    width: 90%;
+    max-width: 550px;
+    width: 95%;
     text-align: center;
     position: relative;
     z-index: 2001;
@@ -935,9 +935,9 @@ body {
 
 .crisis-body {
     font-size: 16px;
-    color: var(--dark);
+    color: var(--text-main);
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .crisis-actions {
@@ -1022,11 +1022,21 @@ body {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: var(--text-main);
 }
 
 .resource-card p {
     font-size: 14px;
     opacity: 0.9;
+    color: var(--text-muted);
+}
+
+.resource-card:hover h3 {
+    color: white;
+}
+
+.resource-card:hover p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* ==========================================

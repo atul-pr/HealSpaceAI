@@ -1,11 +1,11 @@
 /**
- * MindCare Theme Management System
+ * HealSpace Theme Management System
  * Handles light/dark mode persistence and toggle logic
  */
 
 const ThemeManager = {
     init() {
-        const savedTheme = localStorage.getItem('mindcare-theme') || 'light';
+        const savedTheme = localStorage.getItem('healspace-theme') || 'light';
         this.setTheme(savedTheme);
         this.updateIcons(savedTheme);
     },
@@ -14,7 +14,7 @@ const ThemeManager = {
         const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         this.setTheme(newTheme);
-        localStorage.setItem('mindcare-theme', newTheme);
+        localStorage.setItem('healspace-theme', newTheme);
         this.updateIcons(newTheme);
     },
 

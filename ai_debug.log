@@ -1,0 +1,378 @@
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 889-831-168
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+DEBUG:root:Detecting crisis in: 'i want to suicide'
+DEBUG:root:Suicide match: suicide
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:25] "[32mGET /chat HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:25] "GET /login?next=/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:25] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:34] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:34] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:38] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:38] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:38] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6887
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.2-1B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 467
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 700
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:07:49] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i want to book i flight ticket'
+DEBUG:root:Checking relevance for: 'i want to book i flight ticket'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1300
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:08:03] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:25] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:25] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:25] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:29] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:35] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:44] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:44] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:56] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:56] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:13:56] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i'm feeling sad'
+DEBUG:root:Checking relevance for: 'i'm feeling sad'
+DEBUG:root:Relevance match: sad
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 915
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:14:04] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i want to book aeroplane tickets'
+DEBUG:root:Checking relevance for: 'i want to book aeroplane tickets'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1338
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:14:47] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:14:55] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:14:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:14:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:14:55] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i want to suicide'
+DEBUG:root:Suicide match: suicide
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:16:58] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:19] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:19] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:21] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:25] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:25] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:25] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:37] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:37] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:37] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:39] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:39] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:39] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:41] "GET /admin/user/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:41] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:17:41] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:10] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:10] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:10] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:12] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:12] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:12] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:31] "GET /admin/actions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:31] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:32] "GET /admin/user/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:33] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:36] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:36] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:43] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:43] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:58] "GET /admin/user/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:59] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:18:59] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:17] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:17] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:20] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:19:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:20:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:20:59] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:20:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:20:59] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:01] "GET /mood-history-page HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:01] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:01] "GET /mood-history HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:05] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:05] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:05] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i want breathing exercises'
+DEBUG:root:Checking relevance for: 'i want breathing exercises'
+DEBUG:root:Relevance match: breathing
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1248
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:21:17] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:22:29] "GET /mood-history-page HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:22:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:22:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:22:29] "GET /mood-history HTTP/1.1" 200 -
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.169.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 889-831-168
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.169.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 889-831-168
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:39:42] "GET /health HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:32] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:32] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:36] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:48] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:49] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:51] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:40:51] "GET /static/script.js HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i want to not suicide'
+DEBUG:root:Suicide match: suicide
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:41:08] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\project ibm\\mental-health-chatbot\\crisis.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 889-831-168
+DEBUG:root:Detecting crisis in: 'i want to not sucide'
+DEBUG:root:Checking relevance for: 'i want to not sucide'
+DEBUG:root:Relevance: default allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6887
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.2-1B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 467
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1279
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:46:18] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\project ibm\\mental-health-chatbot\\test_hf_manual.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.169.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 889-831-168
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:02] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:07] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:12] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:12] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:12] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:14] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:14] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:14] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i want to sucide'
+DEBUG:root:Checking relevance for: 'i want to sucide'
+DEBUG:root:Relevance: default allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6887
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.2-1B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 467
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1168
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:30] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:43] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:53:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i'm feeling sad'
+DEBUG:root:Checking relevance for: 'i'm feeling sad'
+DEBUG:root:Relevance match: sad
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 911
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:55:07] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'my presentation is not go well'
+DEBUG:root:Checking relevance for: 'my presentation is not go well'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1084
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:55:21] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'tell me hot to get a girlfreind'
+DEBUG:root:Checking relevance for: 'tell me hot to get a girlfreind'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1380
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:01] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i want to book a flight ticket'
+DEBUG:root:Checking relevance for: 'i want to book a flight ticket'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 1010
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:23] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:31] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:31] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:34] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:34] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:34] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:38] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:38] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2026 13:56:38] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\project ibm\\mental-health-chatbot\\test_hf_manual.py', reloading
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.232.73.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat

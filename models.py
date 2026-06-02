@@ -1,5 +1,5 @@
 """
-Database Models - SQLAlchemy ORM models for MindCare AI
+Database Models - SQLAlchemy ORM models for HealSpace AI
 """
 
 from flask_sqlalchemy import SQLAlchemy
@@ -151,19 +151,30 @@ def init_db(app):
         # Create all tables
         db.create_all()
         
-        # Create default admin user if not exists
-        admin = User.query.filter_by(username='admin').first()
-        if not admin:
+        # Create default admin user if not exists (check both username and email)
+        admin_by_user = User.query.filter_by(username='healspace_admin').first()
+        admin_by_email = User.query.filter_by(email='admin@healspace.ai').first()
+        
+        if not admin_by_user and not admin_by_email:
             admin = User(
-                username='admin',
-                email='admin@mindcare.ai',
+                username='healspace_admin',
+                email='admin@healspace.ai',
                 role='admin',
                 is_active=True
             )
-            admin.set_password('Admin@123')
+            admin.set_password('HealSpace@123')
             db.session.add(admin)
             db.session.commit()
-            print("✓ Default admin user created (username: admin, password: Admin@123)")
+            print("✓ Default admin user created (username: healspace_admin, password: HealSpace@123)")
+        elif admin_by_user and not admin_by_email:
+            # Username exists but email is different? Update it or just skip
+            pass
+        elif not admin_by_user and admin_by_email:
+            # Email exists but username is different? Update the username
+            admin_by_email.username = 'healspace_admin'
+            admin_by_email.set_password('HealSpace@123')
+            db.session.commit()
+            print("✓ Updated existing user with admin email to new admin username.")
         
         print("✓ Database initialized successfully")
 

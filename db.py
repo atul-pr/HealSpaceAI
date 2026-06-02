@@ -6,7 +6,7 @@ import sqlite3
 from datetime import datetime
 import os
 
-DB_PATH = 'chatbot.db'
+DB_PATH = 'healspace.db'
 
 def get_db_connection():
     """Create database connection"""

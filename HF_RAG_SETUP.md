@@ -1,4 +1,4 @@
-# MindCare AI - Hugging Face + RAG Setup Guide
+# HealSpace AI - Hugging Face + RAG Setup Guide
 
 ## 🎯 What Changed
 
@@ -41,7 +41,7 @@
 
 1. Go to https://huggingface.co/settings/tokens
 2. Click "New token"
-3. Name: `mindcare-ai`
+3. Name: `healspace-ai`
 4. Type: **Read** (free tier)
 5. Copy the token (starts with `hf_...`)
 

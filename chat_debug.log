@@ -1,0 +1,23 @@
+2026-02-06 13:03:37.481764: msg='i want to suicide', is_crisis=True, type=suicide
+2026-02-06 13:05:25.181271: msg='i want to suicide', is_crisis=True, type=suicide
+2026-02-06 13:07:41.856743: msg='hi', is_crisis=False, type=None
+2026-02-06 13:08:01.646419: msg='i want to book i flight ticket', is_crisis=False, type=None
+2026-02-06 13:14:01.460850: msg='I'm feeling sad', is_crisis=False, type=None
+2026-02-06 13:14:45.065086: msg='i want to book aeroplane tickets', is_crisis=False, type=None
+2026-02-06 13:16:58.252240: msg='i want to suicide', is_crisis=True, type=suicide
+2026-02-06 13:21:14.910465: msg='I want breathing exercises', is_crisis=False, type=None
+2026-02-06 13:41:08.086885: msg='I want to not suicide', is_crisis=True, type=suicide
+2026-02-06 13:46:08.705038: msg='i want to not sucide', is_crisis=False, type=None
+2026-02-06 13:53:21.534460: msg='i want to sucide', is_crisis=False, type=None
+2026-02-06 13:55:05.124912: msg='I'm feeling sad', is_crisis=False, type=None
+2026-02-06 13:55:19.486023: msg='my presentation is not go well', is_crisis=False, type=None
+2026-02-06 13:55:59.204019: msg='tell me hot to get a girlfreind', is_crisis=False, type=None
+2026-02-06 13:56:21.945900: msg='i want to book a flight ticket', is_crisis=False, type=None
+2026-06-02 20:58:18.237236: msg='hi', is_crisis=False, type=None
+2026-06-02 20:58:42.418927: msg='I'm feeling sad', is_crisis=False, type=None
+2026-06-02 20:58:55.461533: msg='whats your name', is_crisis=False, type=None
+2026-06-02 20:59:13.918406: msg='tell me your name again', is_crisis=False, type=None
+2026-06-02 20:59:19.512696: msg='again', is_crisis=False, type=None
+2026-06-02 20:59:43.819855: msg='tell me about iran war', is_crisis=False, type=None
+2026-06-02 21:00:30.186159: msg='I'm feeling anxious', is_crisis=False, type=None
+2026-06-02 21:01:05.440888: msg='actually i like a girl in my college tell me how can i approach her', is_crisis=False, type=None

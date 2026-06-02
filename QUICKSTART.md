@@ -50,7 +50,7 @@ That's it! The chatbot is now running.
 > "150 million Indians need mental health support, but only 9,000 psychiatrists exist. That's 1 psychiatrist for every 16,000 people. Most people never get help due to cost, stigma, and access barriers."
 
 ### Minute 2: Solution Overview
-> "MindCare is a free, 24/7 AI chatbot that provides empathetic support, detects crisis situations, and routes users to professional help. It's designed specifically for India with cultural sensitivity."
+> "HealSpace is a free, 24/7 AI chatbot that provides empathetic support, detects crisis situations, and routes users to professional help. It's designed specifically for India with cultural sensitivity."
 
 ### Minute 3: Live Demo - Normal Support
 1. Type: "I'm stressed about work"
@@ -97,7 +97,7 @@ pip install -r requirements.txt
 ### Database Error
 ```bash
 # Delete and recreate database
-del chatbot.db
+del healspace.db
 python app.py
 ```
 

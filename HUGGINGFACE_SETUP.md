@@ -21,7 +21,7 @@ Your chatbot now uses **HuggingFace's free Inference API** for fully conversatio
 ### Step 2: Generate API Token
 1. Go to: **https://huggingface.co/settings/tokens**
 2. Click **"New token"**
-3. Name: `mental-health-chatbot`
+3. Name: `healspace-ai`
 4. Type: **Read** (default)
 5. Click **"Generate token"**
 6. **Copy the token** (starts with `hf_...`)

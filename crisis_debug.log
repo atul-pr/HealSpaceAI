@@ -1,0 +1,33 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 889-831-168
+INFO:werkzeug: * Detected change in 'D:\\project ibm\\mental-health-chatbot\\ai.py', reloading
+DEBUG:root:Detecting crisis in: 'i want to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i want to not suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i don't want to live'
+DEBUG:root:Suicide match: don't want to live
+DEBUG:root:Detecting crisis in: 'i don't want to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i promise not to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i want to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i want to not suicide'
+DEBUG:root:Exclusion match: not.*suicide
+DEBUG:root:Detecting crisis in: 'i don't want to live'
+DEBUG:root:Suicide match: don't want to live
+DEBUG:root:Detecting crisis in: 'i don't want to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i promise not to suicide'
+DEBUG:root:Exclusion match: not.*suicide
+DEBUG:root:Detecting crisis in: 'i want to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i want to not suicide'
+DEBUG:root:Exclusion match: not.*suicide
+DEBUG:root:Detecting crisis in: 'i don't want to live'
+DEBUG:root:Suicide match: don't want to live
+DEBUG:root:Detecting crisis in: 'i don't want to suicide'
+DEBUG:root:Suicide match: suicide
+DEBUG:root:Detecting crisis in: 'i promise not to suicide'
+DEBUG:root:Exclusion match: not.*suicide

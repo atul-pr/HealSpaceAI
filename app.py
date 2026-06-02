@@ -1,5 +1,5 @@
 """
-MindCare AI - Mental Health Support Chatbot with Authentication
+HealSpace AI - Mental Health Support Chatbot with Authentication
 Provides 24/7 emotional support with crisis detection for Indian users
 """
 
@@ -55,7 +55,7 @@ def index():
 @app.route('/health')
 def health_check():
     """Health check endpoint for deployment"""
-    return jsonify({'status': 'healthy', 'service': 'MindCare AI'})
+    return jsonify({'status': 'healthy', 'service': 'HealSpace AI'})
 
 
 # ============================================================================
@@ -112,6 +112,9 @@ def chat():
         
         # CRITICAL: Check for crisis BEFORE AI response
         is_crisis, crisis_type = detect_crisis(user_message)
+        
+        with open('chat_debug.log', 'a') as f:
+            f.write(f"{datetime.now()}: msg='{user_message}', is_crisis={is_crisis}, type={crisis_type}\n")
         
         if is_crisis:
             # Log crisis event (only if logged in)
