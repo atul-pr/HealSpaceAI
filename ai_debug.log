@@ -658,3 +658,12 @@ INFO:werkzeug: * Restarting with stat
 DEBUG:faiss.loader:Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
 INFO:faiss.loader:Loading faiss with AVX2 support.
 INFO:faiss.loader:Successfully loaded faiss with AVX2 support.
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:01:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:01:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:01:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:02:01] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:02:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:02:02] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+DEBUG:faiss.loader:Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Successfully loaded faiss with AVX2 support.

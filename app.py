@@ -36,6 +36,20 @@ app.register_blueprint(auth_bp)
 # Initialize database and create tables
 with app.app_context():
     init_db(app)
+    
+    # Auto-create admin user if it doesn't exist
+    admin_user = User.query.filter_by(username='admin').first()
+    if not admin_user:
+        from werkzeug.security import generate_password_hash
+        admin_user = User(
+            username='admin',
+            email='admin@healspace.com',
+            password_hash=generate_password_hash('Admin@123456'),
+            role='admin'
+        )
+        db.session.add(admin_user)
+        db.session.commit()
+        print("✅ Default admin user created: admin / Admin@123456")
 
 # Initialize RAG system
 from rag import initialize_rag
