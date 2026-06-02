@@ -42,7 +42,7 @@ with app.app_context():
     init_db(app)
     
     # Auto-create admin user if it doesn't exist
-    admin_user = User.query.filter_by(username='admin').first()
+    admin_user = User.query.filter_by(email='admin@healspace.ai').first()
     if not admin_user:
         from werkzeug.security import generate_password_hash
         admin_user = User(
