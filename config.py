@@ -5,41 +5,56 @@ Configuration Module - Environment-based settings for HealSpace AI
 import os
 from datetime import timedelta
 
+
 class Config:
     """Base configuration"""
-    # Secret key for sessions and CSRF protection
-    SECRET_KEY = os.getenv('SECRET_KEY', os.urandom(24).hex())
-    
-    # Database configuration
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///healspace.db')
+
+    # SECRET_KEY MUST be set as a Railway env var.
+    # If missing, a deterministic (but insecure) fallback is used and warned.
+    _raw_secret = os.getenv('SECRET_KEY', '')
+    if not _raw_secret:
+        import hashlib
+        _raw_secret = hashlib.sha256(b'healspace-default-insecure-key').hexdigest()
+        print("WARNING: SECRET_KEY env var not set! Sessions will be insecure. "
+              "Set SECRET_KEY in Railway Variables.")
+    SECRET_KEY = _raw_secret
+
+    # Database — Railway provides DATABASE_URL as postgres:// but SQLAlchemy needs postgresql://
+    _db_url = os.getenv('DATABASE_URL', 'sqlite:///healspace.db')
+    if _db_url.startswith('postgres://'):
+        _db_url = _db_url.replace('postgres://', 'postgresql://', 1)
+    SQLALCHEMY_DATABASE_URI = _db_url
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    
-    # Session configuration
-    SESSION_TYPE = 'filesystem'
+    SQLALCHEMY_ENGINE_OPTIONS = {
+        'pool_pre_ping': True,    # test connection before use
+        'pool_recycle': 300,      # recycle connections every 5 min
+    }
+
+    # Session — cookie-based (NOT filesystem — Railway FS is ephemeral)
     PERMANENT_SESSION_LIFETIME = timedelta(days=7)
-    SESSION_COOKIE_SECURE = False  # Set to True in production with HTTPS
+    SESSION_COOKIE_SECURE = os.getenv('FLASK_ENV', 'development') == 'production'
     SESSION_COOKIE_HTTPONLY = True
     SESSION_COOKIE_SAMESITE = 'Lax'
-    
-    # Flask-Login configuration
+
+    # Flask-Login
     REMEMBER_COOKIE_DURATION = timedelta(days=30)
-    
-    # Gemini API
+
+    # Legacy API keys
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
+
 
 class DevelopmentConfig(Config):
     """Development configuration"""
     DEBUG = True
     TESTING = False
 
+
 class ProductionConfig(Config):
     """Production configuration"""
     DEBUG = False
     TESTING = False
-    SESSION_COOKIE_SECURE = True  # Require HTTPS
-    
-    # Use PostgreSQL in production if DATABASE_URL is provided
-    # Render automatically provides DATABASE_URL for PostgreSQL
+    SESSION_COOKIE_SECURE = True   # Railway always serves over HTTPS
+
 
 class TestingConfig(Config):
     """Testing configuration"""
@@ -47,13 +62,14 @@ class TestingConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
     WTF_CSRF_ENABLED = False
 
-# Configuration dictionary
+
 config = {
     'development': DevelopmentConfig,
     'production': ProductionConfig,
     'testing': TestingConfig,
     'default': DevelopmentConfig
 }
+
 
 def get_config():
     """Get configuration based on FLASK_ENV"""

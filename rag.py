@@ -358,26 +358,38 @@ def get_rag_context(user_message: str) -> str:
 
 def initialize_rag():
     """
-    Initialize RAG system on startup
-    
-    Call this when Flask app starts
+    Initialize RAG system on startup.
+    Failures are caught and RAG is disabled gracefully — the app still works
+    with pattern-based fallback responses.
     """
+    global RAG_ENABLED
+
     if not RAG_ENABLED:
         print("RAG is disabled")
         return
-    
+
     print("\nInitializing RAG system...")
-    
-    # Check if vector store exists
-    if os.path.exists(VECTOR_DB_PATH):
-        load_vector_store()
-        print("✅ RAG system loaded from disk")
-    else:
+
+    try:
+        # Check if vector store exists
+        if os.path.exists(VECTOR_DB_PATH):
+            if load_vector_store():
+                print("✅ RAG system loaded from disk")
+                return
+            else:
+                print("Vector store corrupted. Rebuilding...")
+
+        # Try to ingest documents
         print("Vector store not found. Ingesting documents...")
         if ingest_documents():
             print("✅ RAG system initialized")
         else:
-            print("❌ RAG initialization failed")
+            print("⚠️  RAG initialization failed — disabling RAG, app will use fallback responses.")
+            RAG_ENABLED = False
+
+    except Exception as e:
+        print(f"⚠️  RAG system error: {e} — disabling RAG, app will use fallback responses.")
+        RAG_ENABLED = False
 
 
 # ============================================================================

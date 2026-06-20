@@ -11,8 +11,13 @@ import random
 import logging
 from typing import Optional
 
-# Set up logging
-logging.basicConfig(filename='ai_debug.log', level=logging.DEBUG)
+# Log to stdout — Railway captures stdout/stderr in its dashboard
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(name)s: %(message)s',
+    handlers=[logging.StreamHandler()]
+)
+logger = logging.getLogger(__name__)
 
 # Import Hugging Face AI
 from hf_ai import call_huggingface_api

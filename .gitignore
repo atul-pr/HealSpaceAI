@@ -1,8 +1,32 @@
-# .env
-*.env
-.env.example
-
-*.env.example
-
+# Environment files — never commit secrets
 .env
-.env.example
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Database (local only — Railway uses PostgreSQL)
+*.db
+instance/
+
+# Logs (write to stdout in production)
+*.log
+ai_debug.log
+chat_debug.log
+crisis_debug.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NOTE: data/documents/ and data/vector_store/ ARE committed
+# so Railway has the RAG data on deploy
