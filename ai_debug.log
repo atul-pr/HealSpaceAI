@@ -667,3 +667,314 @@ INFO:werkzeug:127.0.0.1 - - [02/Jun/2026 22:02:02] "[36mGET /static/theme.js HT
 DEBUG:faiss.loader:Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
 INFO:faiss.loader:Loading faiss with AVX2 support.
 INFO:faiss.loader:Successfully loaded faiss with AVX2 support.
+DEBUG:faiss.loader:Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Successfully loaded faiss with AVX2 support.
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:38:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:38:21] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:38:21] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:38:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:05] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:12] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:12] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:16] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:16] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:16] "GET /static/admin.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:23] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:23] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:23] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:24] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:24] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:24] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:24] "GET /admin/actions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:24] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:24] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:25] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:25] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:25] "GET /static/script.js HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.2-1B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 355
+WARNING:huggingface_hub.inference._providers._common:Our latest automated health check on model 'meta-llama/Llama-3.2-1B-Instruct' for provider 'novita' did not complete successfully.  Inference call might fail.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 503 None
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:39:36] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:41:55] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:41:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:41:55] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:41:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+WARNING:huggingface_hub.inference._providers._common:Our latest automated health check on model 'meta-llama/Llama-3.2-1B-Instruct' for provider 'novita' did not complete successfully.  Inference call might fail.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 503 None
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:41:59] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'what 2+2'
+DEBUG:root:Checking relevance for: 'what 2+2'
+DEBUG:root:Relevance: short message allowed
+WARNING:huggingface_hub.inference._providers._common:Our latest automated health check on model 'meta-llama/Llama-3.2-1B-Instruct' for provider 'novita' did not complete successfully.  Inference call might fail.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 503 None
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:42:07] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'what your name'
+DEBUG:root:Checking relevance for: 'what your name'
+DEBUG:root:Relevance: short message allowed
+WARNING:huggingface_hub.inference._providers._common:Our latest automated health check on model 'meta-llama/Llama-3.2-1B-Instruct' for provider 'novita' did not complete successfully.  Inference call might fail.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 503 None
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:42:25] "POST /chat HTTP/1.1" 200 -
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:33] "[32mGET /chat HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:33] "GET /login?next=/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:37] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:37] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:37] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:45] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:45] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:45] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:45] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:46] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:46] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model Qwen/Qwen2.5-1.5B-Instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/Qwen/Qwen2.5-1.5B-Instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1806310>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model TinyLlama/TinyLlama-1.1B-Chat-v1.0 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/TinyLlama/TinyLlama-1.1B-Chat-v1.0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1804350>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model microsoft/Phi-3-mini-4k-instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/microsoft/Phi-3-mini-4k-instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1804490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model HuggingFaceH4/zephyr-7b-beta exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/HuggingFaceH4/zephyr-7b-beta (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807D50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model mistralai/Mistral-7B-Instruct-v0.3 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805D90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:54] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'not good'
+DEBUG:root:Checking relevance for: 'not good'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model Qwen/Qwen2.5-1.5B-Instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/Qwen/Qwen2.5-1.5B-Instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805050>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model TinyLlama/TinyLlama-1.1B-Chat-v1.0 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/TinyLlama/TinyLlama-1.1B-Chat-v1.0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model microsoft/Phi-3-mini-4k-instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/microsoft/Phi-3-mini-4k-instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1806050>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model HuggingFaceH4/zephyr-7b-beta exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/HuggingFaceH4/zephyr-7b-beta (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1804150>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model mistralai/Mistral-7B-Instruct-v0.3 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1804150>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:45:59] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'what your name'
+DEBUG:root:Checking relevance for: 'what your name'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model Qwen/Qwen2.5-1.5B-Instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/Qwen/Qwen2.5-1.5B-Instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805290>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model TinyLlama/TinyLlama-1.1B-Chat-v1.0 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/TinyLlama/TinyLlama-1.1B-Chat-v1.0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805F50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model microsoft/Phi-3-mini-4k-instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/microsoft/Phi-3-mini-4k-instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807810>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model HuggingFaceH4/zephyr-7b-beta exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/HuggingFaceH4/zephyr-7b-beta (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D18050D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model mistralai/Mistral-7B-Instruct-v0.3 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D18052D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:46:10] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:20] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hey buddy'
+DEBUG:root:Checking relevance for: 'hey buddy'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model Qwen/Qwen2.5-1.5B-Instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/Qwen/Qwen2.5-1.5B-Instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D18065D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model TinyLlama/TinyLlama-1.1B-Chat-v1.0 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/TinyLlama/TinyLlama-1.1B-Chat-v1.0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805DD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model microsoft/Phi-3-mini-4k-instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/microsoft/Phi-3-mini-4k-instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D18061D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model HuggingFaceH4/zephyr-7b-beta exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/HuggingFaceH4/zephyr-7b-beta (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805150>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model mistralai/Mistral-7B-Instruct-v0.3 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805250>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:24] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i'm feeling sad'
+DEBUG:root:Checking relevance for: 'i'm feeling sad'
+DEBUG:root:Relevance match: sad
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model Qwen/Qwen2.5-1.5B-Instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/Qwen/Qwen2.5-1.5B-Instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807510>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model TinyLlama/TinyLlama-1.1B-Chat-v1.0 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/TinyLlama/TinyLlama-1.1B-Chat-v1.0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807210>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model microsoft/Phi-3-mini-4k-instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/microsoft/Phi-3-mini-4k-instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D18052D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model HuggingFaceH4/zephyr-7b-beta exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/HuggingFaceH4/zephyr-7b-beta (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1806A50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model mistralai/Mistral-7B-Instruct-v0.3 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805750>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:27] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'hiihisjkkfshsdhflk'
+DEBUG:root:Checking relevance for: 'hiihisjkkfshsdhflk'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model Qwen/Qwen2.5-1.5B-Instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/Qwen/Qwen2.5-1.5B-Instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1806050>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model TinyLlama/TinyLlama-1.1B-Chat-v1.0 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/TinyLlama/TinyLlama-1.1B-Chat-v1.0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807F10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model microsoft/Phi-3-mini-4k-instruct exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/microsoft/Phi-3-mini-4k-instruct (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1807A50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model HuggingFaceH4/zephyr-7b-beta exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/HuggingFaceH4/zephyr-7b-beta (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1805D50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-inference.huggingface.co:443
+WARNING:root:HF model mistralai/Mistral-7B-Instruct-v0.3 exception: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000259D1806ED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:47:31] "POST /chat HTTP/1.1" 200 -
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:43] "[32mGET /chat HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:43] "GET /login?next=/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:48] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:48] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:48] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:51] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:48:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-72B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 333
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 498
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:03] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'just want to tell you sometghing'
+DEBUG:root:Checking relevance for: 'just want to tell you sometghing'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 436
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:16] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i like a girl'
+DEBUG:root:Checking relevance for: 'i like a girl'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 527
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:25] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -

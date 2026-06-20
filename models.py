@@ -151,10 +151,11 @@ def init_db(app):
         # Create all tables
         db.create_all()
         
-        # Create default admin user if not exists (check by email only)
-        admin_user = User.query.filter_by(email='admin@healspace.ai').first()
+        # Create default admin user if not exists (check by email and username)
+        admin_by_email = User.query.filter_by(email='admin@healspace.ai').first()
+        admin_by_user = User.query.filter_by(username='admin').first()
         
-        if not admin_user:
+        if not admin_by_email and not admin_by_user:
             admin = User(
                 username='admin',
                 email='admin@healspace.ai',
