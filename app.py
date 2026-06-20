@@ -91,7 +91,7 @@ def dashboard():
 
 @app.route('/chat')
 @login_required
-def chat_page():
+def chat_page():also 
     """Chat interface"""
     return render_template('chat.html')
 

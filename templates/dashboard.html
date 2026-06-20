@@ -217,10 +217,16 @@
 
 <body>
     <header class="header-nav">
-        <a href="/" class="nav-logo">
-            <i class="fas fa-brain"></i>
-            <span>HealSpace AI</span>
-        </a>
+        <div style="display:flex;align-items:center;gap:16px;">
+            <a href="/" class="back-nav-btn" title="Back to Home" style="text-decoration:none;display:inline-flex;align-items:center;gap:7px;color:#6366f1;font-weight:600;font-size:14px;padding:8px 14px;border-radius:50px;background:rgba(99,102,241,0.1);transition:0.3s;">
+                <i class="fas fa-arrow-left"></i>
+                <span>Home</span>
+            </a>
+            <a href="/" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>HealSpace AI</span>
+            </a>
+        </div>
         <div class="user-profile">
             <button class="theme-toggle-btn" onclick="ThemeManager.toggle()" title="Toggle Theme">
                 <i class="fas fa-moon theme-toggle-icon"></i>
