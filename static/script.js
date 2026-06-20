@@ -17,14 +17,21 @@ function autoResize(textarea) {
     textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
 }
 
-// Send message function
+// Send message function — guard against double-send
+let _isSending = false;
+
 function sendMessage() {
+    if (_isSending) return;  // prevent duplicate sends
+
     const input = document.getElementById('messageInput');
     const message = input.value.trim();
 
     if (message === '') {
-        return; // Don't send empty messages
+        return;
     }
+
+    // Lock sending
+    _isSending = true;
 
     // Add user message to chat
     addUserMessage(message);
@@ -44,17 +51,29 @@ function sendMessage() {
         },
         body: JSON.stringify({ message: message })
     })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok && response.status !== 500) {
+                throw new Error('Network response was not ok: ' + response.status);
+            }
+            return response.json();
+        })
         .then(data => {
             hideTypingIndicator();
 
+            // Safely get response text — never show 'undefined'
+            const botText = (data && data.response)
+                ? data.response
+                : (data && data.error)
+                    ? data.error
+                    : "I'm here to support you. Could you tell me more about how you're feeling?";
+
             // Check for crisis
-            if (data.crisis) {
-                showCrisis(data.response);
+            if (data && data.crisis) {
+                showCrisis(botText);
             }
 
             // Add bot response
-            addBotMessage(data.response);
+            addBotMessage(botText);
             scrollToBottom();
         })
         .catch(error => {
@@ -62,6 +81,9 @@ function sendMessage() {
             hideTypingIndicator();
             addBotMessage("I'm having trouble connecting right now. Please try again or reach out to Kiran helpline: 1800-599-0019");
             scrollToBottom();
+        })
+        .finally(() => {
+            _isSending = false;  // unlock after response
         });
 }
 
