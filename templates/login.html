@@ -287,11 +287,11 @@
 
         <form method="POST" action="{{ url_for('auth.login') }}">
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="login_id">Username or Email</label>
                 <div class="input-wrapper">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com"
-                        required autofocus>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="login_id" name="login_id" class="form-control"
+                        placeholder="Username or email address" required autofocus autocomplete="username">
                 </div>
             </div>
 

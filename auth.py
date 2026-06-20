@@ -48,7 +48,7 @@ def admin_required(f):
 
 @auth_bp.route('/login', methods=['GET', 'POST'])
 def login():
-    """User login"""
+    """User login — accepts username or email"""
     # Redirect if already logged in
     if current_user.is_authenticated:
         if current_user.is_admin():
@@ -56,17 +56,19 @@ def login():
         return redirect(url_for('dashboard'))
     
     if request.method == 'POST':
-        email = request.form.get('email', '').strip()
+        login_id = request.form.get('login_id', '').strip()  # username or email
         password = request.form.get('password', '')
         remember = request.form.get('remember', False)
         
         # Validate input
-        if not email or not password:
-            flash('Please provide both email and password.', 'danger')
+        if not login_id or not password:
+            flash('Please provide your username/email and password.', 'danger')
             return render_template('login.html')
         
-        # Find user by email
-        user = User.query.filter_by(email=email).first()
+        # Find user by email first, then by username
+        user = User.query.filter_by(email=login_id).first()
+        if not user:
+            user = User.query.filter_by(username=login_id).first()
         
         # Check credentials
         if user and user.check_password(password):
@@ -91,7 +93,7 @@ def login():
             else:
                 return redirect(url_for('dashboard'))
         else:
-            flash('Invalid email or password.', 'danger')
+            flash('Invalid username/email or password.', 'danger')
     
     return render_template('login.html')
 

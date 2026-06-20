@@ -978,3 +978,765 @@ DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/
 INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:25] "POST /chat HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:49:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:40] "GET /admin/actions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:40] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:42] "GET /admin/user/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:42] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:42] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:48] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:48] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:48] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:53] "GET /admin/actions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:53] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:53] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:53] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:53] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:53] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:56] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:56] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:56] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:57] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:57] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:53:57] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:54:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:54:01] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:54:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:54:01] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:38] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:38] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:41] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:41] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:41] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:43] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'u know what'
+DEBUG:root:Checking relevance for: 'u know what'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 420
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:55:57] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i have crush on a girl'
+DEBUG:root:Checking relevance for: 'i have crush on a girl'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 693
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:12] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:36] "POST /mood HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:41] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:41] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:41] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:43] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:43] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:56:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:03] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:03] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:03] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:06] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:22] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:22] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:22] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:57:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:58:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:58:07] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:58:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:58:07] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:58:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 01:58:15] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:01:29] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:01:29] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:01:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:01:58] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:01:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:01:59] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:00] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:32] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:36] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:36] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:02:37] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:03:51] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:03:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:03:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:12] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:12] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:07:17] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:25] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:25] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:08:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:11:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:11:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:14:34] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:15:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:15:39] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:15:39] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:15:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:27:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:27:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:27:27] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:27:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:27:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:27:28] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:28:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:32:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:32:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:32:57] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:33:06] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:34:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:34:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:34:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:41:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:41:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:41:59] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:21] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:28] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:28] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:32] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:38] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:42:38] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:00] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:00] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:48] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:51] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:43:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:12] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:12] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:27] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:27] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:31] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:31] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hey'
+DEBUG:root:Checking relevance for: 'hey'
+DEBUG:root:Relevance: short message allowed
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-72B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 333
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 499
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:45] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'what 2+2'
+DEBUG:root:Checking relevance for: 'what 2+2'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 527
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:44:57] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:03] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:03] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:10] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:10] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:25] "GET /mood-history-page HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:25] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:25] "GET /mood-history HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:29] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:29] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:33] "POST /mood HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:37] "POST /mood HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:38] "POST /mood HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:38] "POST /mood HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:42] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:42] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:45] "GET /mood-history-page HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:45] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:45] "GET /mood-history HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:52] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:52] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:45:56] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:09] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:58] "GET /static/three-scene.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:58] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:46:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:18] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:18] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:57] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:47:57] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:11] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:15] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:15] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:27] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:27] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:27] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:30] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:30] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:31] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:31] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:31] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:33] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:33] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:33] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:35] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:40] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:40] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:46] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:46] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:47] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:47] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:47] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:48] "GET /admin/users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:48] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:48] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:49] "GET /admin/user/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:49] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:49] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:53] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:53] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:53] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:58] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:58] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:48:58] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:44] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:51] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:54] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:49:54] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:28] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:28] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:28] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:30] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:30] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:30] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:30] "GET /static/three-scene.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:50:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:43] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:43] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:44] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:44] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:51:44] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:07] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:10] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:10] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:10] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:13] "GET /admin/user/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:13] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:13] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:26] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:26] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:26] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:35] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:35] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:35] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:36] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:36] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:36] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:50] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:50] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:53] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:53] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:53:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i'm feeling sad'
+DEBUG:root:Checking relevance for: 'i'm feeling sad'
+DEBUG:root:Relevance match: sad
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-72B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 333
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:54:45] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:54:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:54:45] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:54:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'hi'
+DEBUG:root:Checking relevance for: 'hi'
+DEBUG:root:Relevance: short message allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 604
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:55:06] "POST /chat HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 470
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:55:13] "POST /chat HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 498
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:55:14] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i'm feeling sad'
+DEBUG:root:Checking relevance for: 'i'm feeling sad'
+DEBUG:root:Relevance match: sad
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:root:Detecting crisis in: 'i want to sucide'
+DEBUG:root:Checking relevance for: 'i want to sucide'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 722
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:56:15] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'i going to do sucide'
+DEBUG:root:Checking relevance for: 'i going to do sucide'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 635
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:56:38] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'mujhe atmahatya karna hai'
+DEBUG:root:Checking relevance for: 'mujhe atmahatya karna hai'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:29] "[32mGET /admin/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:29] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 709
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:32] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:38] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:38] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:38] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:45] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:45] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:45] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:55] "GET /admin/analytics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:55] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:57:55] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 770
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:07] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:08] "GET /admin/actions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:08] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:08] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:14] "GET /admin/user/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:14] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:14] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:24] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:24] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:24] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:48] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:48] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 02:58:48] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:01:53] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:01:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:01:53] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:01:53] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:11] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:11] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:11] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:11] "GET /static/three-scene.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:19] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:19] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:19] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:19] "GET /static/three-scene.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:36] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:36] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:36] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:49] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /static/three-scene.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:50] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:02:51] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:46] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:52] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:52] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:52] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:54] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:54] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:06:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:07:00] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:07:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:07:00] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:07:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Detecting crisis in: 'i'm feeling sad'
+DEBUG:root:Checking relevance for: 'i'm feeling sad'
+DEBUG:root:Relevance match: sad
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 613
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:07:06] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'can you tell me best tool for information gathering osint tool'
+DEBUG:root:Checking relevance for: 'can you tell me best tool for information gathering osint tool'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 873
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:07:51] "POST /chat HTTP/1.1" 200 -
+DEBUG:root:Detecting crisis in: 'can you book a flight ticket'
+DEBUG:root:Checking relevance for: 'can you book a flight ticket'
+DEBUG:root:Relevance: default allowed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 692
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:08:17] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:12:58] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:12:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:12:58] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:12:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:18] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:18] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:33] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:33] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:33] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:33] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:13:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:root:Detecting crisis in: 'i want breathing exercises'
+DEBUG:root:Checking relevance for: 'i want breathing exercises'
+DEBUG:root:Relevance match: breathing
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): router.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://router.huggingface.co:443 "POST /novita/v3/openai/chat/completions HTTP/1.1" 200 783
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:01] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:14:40] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:15:55] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:15:55] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:15:55] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:15:55] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:15:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:02] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:02] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:02] "GET /static/theme.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:02] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:07] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:07] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:18] "GET /admin/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:18] "[36mGET /static/admin.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:18] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:21] "GET /mood-history-page HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:21] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:21] "GET /mood-history HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:24] "GET /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:24] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:24] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:16:29] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.173.39.29:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:17] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:17] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:20] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:20] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:24] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:24] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:29] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jun/2026 03:21:29] "[36mGET /static/three-scene.js HTTP/1.1[0m" 304 -
