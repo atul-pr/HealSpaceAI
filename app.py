@@ -47,6 +47,15 @@ with app.app_context():
 from rag import initialize_rag
 initialize_rag()
 
+# Startup check: warn if HF API key is missing
+import os as _os
+_hf_key = _os.getenv('HF_API_KEY', '')
+if not _hf_key or _hf_key in ('', 'your-huggingface-api-key-here'):
+    print("⚠️  WARNING: HF_API_KEY is not set! Chatbot will use fallback responses only.")
+    print("   → Set HF_API_KEY in Railway environment variables (Settings → Variables).")
+else:
+    print(f"✅ HF_API_KEY detected: {_hf_key[:8]}...")
+
 # ============================================================================
 # PUBLIC ROUTES
 # ============================================================================
@@ -61,7 +70,14 @@ def index():
 @app.route('/health')
 def health_check():
     """Health check endpoint for deployment"""
-    return jsonify({'status': 'healthy', 'service': 'HealSpace AI'})
+    import os
+    hf_key = os.getenv('HF_API_KEY', '')
+    return jsonify({
+        'status': 'healthy',
+        'service': 'HealSpace AI',
+        'hf_api_key_set': bool(hf_key and hf_key not in ('', 'your-huggingface-api-key-here')),
+        'hf_key_preview': f"{hf_key[:6]}..." if len(hf_key) > 6 else 'NOT SET'
+    })
 
 
 # ============================================================================
@@ -119,8 +135,11 @@ def chat():
         # CRITICAL: Check for crisis BEFORE AI response
         is_crisis, crisis_type = detect_crisis(user_message)
         
-        with open('chat_debug.log', 'a') as f:
-            f.write(f"{datetime.now()}: msg='{user_message}', is_crisis={is_crisis}, type={crisis_type}\n")
+        try:
+            with open('chat_debug.log', 'a') as f:
+                f.write(f"{datetime.now()}: msg='{user_message}', is_crisis={is_crisis}, type={crisis_type}\n")
+        except Exception:
+            pass  # Railway has read-only FS — ignore log errors
         
         if is_crisis:
             # Log crisis event (only if logged in)
