@@ -1,11 +1,16 @@
 """
 AI Integration Module - Mental Health Support with RAG
+
+Provider waterfall (fastest → most reliable):
+  1. Groq API     — ~0.3-1s,  14,400 req/day FREE  ← PRIMARY
+  2. HuggingFace  — ~5-25s,   ~1,000 req/day FREE  ← FALLBACK
+  3. Pattern-based — instant,  unlimited             ← LAST RESORT
 """
 
 # Force CPU-only mode
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import random
 import logging
@@ -19,17 +24,18 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Import Hugging Face AI
+# Import AI providers
+from groq_ai import call_groq_api
 from hf_ai import call_huggingface_api
 
 # Import RAG
 from rag import get_rag_context, RAG_ENABLED
 
-# Fallback responses (when AI API is unavailable)
+# ── Fallback responses (when ALL APIs are unavailable) ────────────────────────
 FALLBACK_RESPONSES = {
     'anxiety': [
         "I hear that you're feeling anxious. That must be really difficult. Would you like to try a breathing exercise together?",
-        "Anxiety can feel overwhelming. You're not alone. Sometimes grounding yourself helps - can you name 5 things you see right now?",
+        "Anxiety can feel overwhelming. You're not alone. Sometimes grounding yourself helps — can you name 5 things you see right now?",
     ],
     'sad': [
         "I'm sorry you're feeling this way. Your feelings are valid. Is there something specific weighing on you?",
@@ -57,10 +63,9 @@ def is_relevant_topic(message: str) -> bool:
     """
     if not message:
         return False
-        
+
     message_lower = message.lower().strip()
-    logging.debug(f"Checking relevance for: '{message_lower}'")
-    
+
     # Positive keywords (Mental Health & Therapy Domain)
     RELEVANT_KEYWORDS = [
         'anxious', 'anxiety', 'sad', 'depression', 'depressed', 'stress', 'stressful',
@@ -71,99 +76,102 @@ def is_relevant_topic(message: str) -> bool:
         'peace', 'calm', 'breathing', 'meditation', 'grounding', 'mindfulness',
         'sleep', 'insomnia', 'worry', 'worried', 'struggling', 'pain', 'hurting',
         'relationship', 'family', 'friend', 'social', 'confidence', 'self-esteem',
-        'suicide', 'kill', 'die', 'end it'
+        'kill', 'die', 'end it', 'give up'
     ]
-    
-    # 1. Direct Keyword Check
+
+    # 1. Direct keyword check
     for word in RELEVANT_KEYWORDS:
         if word in message_lower:
-            logging.debug(f"Relevance match: {word}")
             return True
-    
-    # 2. Check for emotional intensity (short messages)
+
+    # 2. Short messages — assume emotional (e.g. "Hey", "I'm not okay")
     if len(message_lower.split()) <= 3:
-        logging.debug("Relevance: short message allowed")
         return True
 
-    # 3. Pattern check for common out-of-domain traps
+    # 3. Filter obvious off-topic patterns
     IRRELEVANT_PATTERNS = [
-        'what is', 'who is', 'how to build', 'how to code', 'recipe', 'sports', 
-        'news', 'current events', 'math', 'calculator', 'joke', 'weather'
+        'how to build', 'how to code', 'recipe', 'sports score',
+        'news', 'current events', 'math problem', 'calculator', 'weather forecast'
     ]
-    
     if any(pattern in message_lower for pattern in IRRELEVANT_PATTERNS):
-        logging.debug("Relevance: irrelevant pattern match")
         return False
-        
-    # By default, for a mental health chatbot, we assume longer messages not matching irrelevant patterns are okay
-    logging.debug("Relevance: default allowed")
+
+    # Default: allow — mental health conversations are wide-ranging
     return True
+
+
+def _get_rag_context(user_message: str) -> str:
+    """Safely retrieve RAG context; returns empty string on any error."""
+    try:
+        if RAG_ENABLED:
+            return get_rag_context(user_message)
+    except Exception as e:
+        logger.warning(f"RAG context failed: {e}")
+    return ""
 
 
 def get_ai_response(user_message: str) -> str:
     """
-    Generate empathetic AI response to user message
+    Generate empathetic AI response using provider waterfall:
+      Groq → HuggingFace → Pattern fallback
     """
-    # Step 0: Topic Guardrail
+    # Step 0: Topic guardrail
     if not is_relevant_topic(user_message):
-        return ("I'm here to support your mental health and emotional well-being. "
-                "I focus on therapy, stress management, and empathetic listening. "
-                "I'm unable to assist with general knowledge or off-topic queries, but I'm all ears if you'd like to talk about how you're feeling.")
-    
-    # Step 1: Try Hugging Face API with RAG
-    api_response = call_huggingface_with_rag(user_message)
-    if api_response:
-        return api_response
-    
-    # Step 2: Fallback to pattern-based responses
+        return (
+            "I'm here to support your mental health and emotional well-being. "
+            "I focus on therapy, stress management, and empathetic listening. "
+            "I'm unable to assist with general knowledge queries, but I'm all ears "
+            "if you'd like to talk about how you're feeling. 💙"
+        )
+
+    # Get RAG context once — shared across all providers
+    context = _get_rag_context(user_message)
+
+    # ── Step 1: Groq (ultra-fast, ~0.3-1s) ───────────────────────────────
+    try:
+        groq_response = call_groq_api(user_message, context=context)
+        if groq_response:
+            logger.info("[AI] Provider: Groq ✅")
+            return groq_response
+    except Exception as e:
+        logger.warning(f"[AI] Groq exception: {e}")
+
+    # ── Step 2: HuggingFace (reliable backup, ~5-25s) ─────────────────────
+    try:
+        hf_response = call_huggingface_api(user_message, context=context)
+        if hf_response:
+            logger.info("[AI] Provider: HuggingFace ✅")
+            return hf_response
+    except Exception as e:
+        logger.warning(f"[AI] HuggingFace exception: {e}")
+
+    # ── Step 3: Pattern-based fallback (instant, no API needed) ──────────
+    logger.warning("[AI] All APIs failed — using pattern fallback")
     return get_fallback_response(user_message)
 
 
-def call_huggingface_with_rag(user_message: str) -> Optional[str]:
-    """
-    Call Hugging Face API with RAG-augmented context
-    """
-    try:
-        # Get RAG context if enabled
-        context = ""
-        if RAG_ENABLED:
-            context = get_rag_context(user_message)
-        
-        # Call Hugging Face API
-        response = call_huggingface_api(user_message, context=context)
-        return response
-        
-    except Exception as e:
-        logging.error(f"Error in hf_rag call: {e}")
-        return None
-
-
 def get_fallback_response(user_message: str) -> str:
-    """
-    Get pattern-based fallback response
-    """
+    """Pattern-based fallback response when all APIs are unavailable."""
     message_lower = user_message.lower()
-    
-    # Detect emotional context
-    if any(word in message_lower for word in ['anxious', 'anxiety', 'worried', 'nervous', 'panic']):
+
+    if any(w in message_lower for w in ['anxious', 'anxiety', 'worried', 'nervous', 'panic']):
         category = 'anxiety'
-    elif any(word in message_lower for word in ['sad', 'depressed', 'down', 'unhappy', 'crying']):
+    elif any(w in message_lower for w in ['sad', 'depressed', 'down', 'unhappy', 'crying']):
         category = 'sad'
-    elif any(word in message_lower for word in ['stress', 'stressed', 'overwhelmed', 'pressure']):
+    elif any(w in message_lower for w in ['stress', 'stressed', 'overwhelmed', 'pressure']):
         category = 'stress'
-    elif any(word in message_lower for word in ['lonely', 'alone', 'isolated']):
+    elif any(w in message_lower for w in ['lonely', 'alone', 'isolated']):
         category = 'lonely'
     else:
         category = 'general'
-    
+
     return random.choice(FALLBACK_RESPONSES[category])
 
-def get_coping_strategy(strategy_type):
-    """
-    Return detailed coping strategy instructions
-    """
+
+def get_coping_strategy(strategy_type: str) -> str:
+    """Return detailed coping strategy instructions."""
     strategies = {
-        'breathing': """**4-7-8 Breathing Exercise**\n\n1. Breathe in for 4s\n2. Hold for 7s\n3. Exhale for 8s""",
-        'grounding': """**5-4-3-2-1 Grounding**\n\nName 5 things you see, 4 you can touch...""",
+        'breathing': "**4-7-8 Breathing Exercise**\n\n1. Breathe in for 4s\n2. Hold for 7s\n3. Exhale for 8s\n\nRepeat 3-4 times.",
+        'grounding': "**5-4-3-2-1 Grounding**\n\nName:\n- 5 things you see\n- 4 you can touch\n- 3 you can hear\n- 2 you can smell\n- 1 you can taste",
     }
     return strategies.get(strategy_type, strategies['breathing'])

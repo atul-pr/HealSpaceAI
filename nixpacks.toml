@@ -1,0 +1,18 @@
+[phases.setup]
+nixPkgs = ["python311", "python311Packages.pip", "gcc", "gcc-unwrapped", "g++", "cmake", "zlib", "libstdcxx5"]
+
+[phases.install]
+cmds = [
+    "pip install --upgrade pip",
+    "pip install torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu --no-cache-dir",
+    "pip install -r requirements.txt --no-deps --ignore-installed torch --no-cache-dir",
+    "pip install -r requirements.txt --no-cache-dir"
+]
+
+[phases.build]
+cmds = [
+    "python -c \"from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2', cache_folder='/tmp/hf_cache')\" || echo 'Model pre-download skipped'"
+]
+
+[start]
+cmd = "gunicorn app:app --workers=1 --timeout=300 --bind=0.0.0.0:$PORT --log-level=info --access-logfile=- --error-logfile=- --preload"

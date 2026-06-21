@@ -3,10 +3,18 @@ HealSpace AI - Mental Health Support Chatbot with Authentication
 Provides 24/7 emotional support with crisis detection for Indian users
 """
 
-# Force CPU-only mode before importing ML libraries
+# ── Set ALL environment variables FIRST — before any library imports ──────────
+# This prevents FutureWarnings from transformers about deprecated cache vars.
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # Disable CUDA/GPU
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'   # Reduce TensorFlow logging
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'       # Disable CUDA/GPU
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'        # Suppress TensorFlow/transformers warnings
+# HF_HOME is the single source of truth for all HuggingFace caches (transformers v5+)
+os.environ.setdefault('HF_HOME', '/tmp/hf_cache')
+os.environ.setdefault('SENTENCE_TRANSFORMERS_HOME', '/tmp/hf_cache')
+# Silence the FutureWarning about TRANSFORMERS_CACHE deprecation
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning, module='transformers')
+# ─────────────────────────────────────────────────────────────────────────────
 
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from flask_login import login_required, current_user

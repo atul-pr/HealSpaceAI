@@ -22,8 +22,11 @@ HOW IT WORKS:
 
 # Force CPU-only mode before importing ML libraries
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # Disable CUDA/GPU
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'   # Reduce TensorFlow logging
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'       # Disable CUDA/GPU
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'        # Suppress all TF/transformers warnings
+# HF_HOME covers all HuggingFace caches (replaces deprecated TRANSFORMERS_CACHE)
+os.environ.setdefault('HF_HOME', '/tmp/hf_cache')
+os.environ.setdefault('SENTENCE_TRANSFORMERS_HOME', '/tmp/hf_cache')
 
 import pickle
 from typing import List, Dict, Optional
@@ -31,13 +34,16 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
 
+# Resolve paths relative to THIS file so they work regardless of CWD
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
 
 RAG_ENABLED = True  # Set to True to enable RAG
-VECTOR_DB_PATH = "data/vector_store/faiss_index.pkl"  # FAISS index file
-DOCUMENTS_PATH = "data/documents"  # Path to curated mental health documents
+VECTOR_DB_PATH = os.path.join(_BASE_DIR, "data", "vector_store", "faiss_index.pkl")
+DOCUMENTS_PATH = os.path.join(_BASE_DIR, "data", "documents")
 CHUNK_SIZE = 500  # Characters per chunk
 TOP_K_RESULTS = 2  # Number of relevant chunks to retrieve
 

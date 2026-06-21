@@ -1,9 +1,15 @@
 [build]
 builder = "nixpacks"
 
+[build.nixpacksPlan.phases.setup]
+nixPkgs = ["python311", "python311Packages.pip", "gcc", "g++", "cmake"]
+
 [deploy]
-startCommand = "CUDA_VISIBLE_DEVICES=-1 gunicorn app:app --workers=2 --timeout=120 --bind=0.0.0.0:$PORT --log-level=info --access-logfile=- --error-logfile=-"
+# workers = (2 x CPU cores) + 1 is the standard formula
+# Railway Starter gives 1 shared vCPU → 3 workers is optimal
+# gevent worker: each worker handles many concurrent requests async (perfect for I/O-heavy HF API calls)
+startCommand = "gunicorn app:app --workers=3 --worker-class=gevent --worker-connections=10 --timeout=120 --bind=0.0.0.0:$PORT --log-level=info --access-logfile=- --error-logfile=- --preload"
 healthcheckPath = "/health"
-healthcheckTimeout = 30
+healthcheckTimeout = 120
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
