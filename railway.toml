@@ -1,12 +1,10 @@
 # Railway auto-detects Dockerfile — no builder specification needed.
-# nixpacks.toml is ignored when a Dockerfile is present.
 
 [deploy]
-# 2 gevent workers = safe for Railway Starter (512MB RAM)
-# gevent handles concurrent I/O (HF/Groq API calls) without blocking
-# --preload removed: unsafe with gevent + SQLAlchemy (fork-safety issue)
-startCommand = "gunicorn app:app --workers=2 --worker-class=gevent --worker-connections=10 --timeout=120 --bind=0.0.0.0:$PORT --log-level=info --access-logfile=- --error-logfile=-"
+# Using standard sync workers — more reliable for startup
+# gevent can cause silent failures when app has heavy ML imports
+startCommand = "gunicorn app:app --workers=1 --timeout=120 --bind=0.0.0.0:$PORT --log-level=debug --access-logfile=- --error-logfile=-"
 healthcheckPath = "/health"
-healthcheckTimeout = 120
+healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
