@@ -1,0 +1,13 @@
+.env
+.git
+.gitignore
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+instance/
+*.db
+.vscode/
+.idea/
+node_modules/

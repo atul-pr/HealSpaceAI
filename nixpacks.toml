@@ -1,18 +1,15 @@
 [phases.setup]
-# Only use packages that exist in nixpacks' pinned Nixpkgs snapshot.
-# gcc already includes g++ and the standard C++ library — no need for gcc-unwrapped or libstdcxx5.
+# Valid Nix packages only — gcc includes the C++ compiler automatically
 nixPkgs = ["python311", "python311Packages.pip", "gcc", "cmake", "zlib"]
 
-[phases.install]
-cmds = [
-    "pip install --upgrade pip",
-    "pip install torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu --no-cache-dir",
-    "pip install -r requirements.txt --no-cache-dir"
-]
+# DO NOT override [phases.install] — nixpacks auto-creates /opt/venv and uses
+# its own pip, which IS writable. Overriding it breaks venv setup and hits
+# the read-only Nix store (PEP 668 "externally managed" error).
+# Instead, torch CPU is specified directly in requirements.txt via --extra-index-url.
 
 [phases.build]
 cmds = [
-    "python -c \"from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2', cache_folder='/tmp/hf_cache')\" || echo 'Model pre-download skipped'"
+    "python -c \"import os; os.environ.setdefault('SENTENCE_TRANSFORMERS_HOME','/tmp/hf_cache'); from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2', cache_folder='/tmp/hf_cache')\" || echo 'Model pre-download skipped (will download at runtime)'"
 ]
 
 [start]
