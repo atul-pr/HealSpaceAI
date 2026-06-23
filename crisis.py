@@ -7,7 +7,11 @@ import re
 import logging
 
 # Set up logging
-logging.basicConfig(filename='crisis_debug.log', level=logging.DEBUG)
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s [%(levelname)s] %(name)s: %(message)s',
+    handlers=[logging.StreamHandler()]  # stdout — Railway captures this
+)
 
 # Crisis keyword patterns (case-insensitive)
 SUICIDE_KEYWORDS = [

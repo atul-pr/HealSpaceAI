@@ -48,8 +48,6 @@ app.register_blueprint(auth_bp)
 # Initialize database and create tables
 with app.app_context():
     init_db(app)
-    
-    # Admin user is already created by init_db() in models.py during database initialization
 
 # Initialize RAG system
 from rag import initialize_rag
@@ -129,6 +127,7 @@ def chat_page():
 
 
 @app.route('/chat', methods=['POST'])
+@login_required
 def chat():
     """Handle chat messages with crisis detection and AI response"""
     try:

@@ -15,7 +15,6 @@ python -c "import sqlalchemy; print('SQLAlchemy OK:', sqlalchemy.__version__)"
 python -c "import faiss; print('FAISS OK')"
 python -c "import sentence_transformers; print('SentenceTransformers OK:', sentence_transformers.__version__)"
 python -c "import groq; print('Groq OK:', groq.__version__)"
-python -c "import gevent; print('Gevent OK:', gevent.__version__)"
 
 echo ""
 echo "--- Starting gunicorn ---"

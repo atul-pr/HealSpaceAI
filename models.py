@@ -144,39 +144,48 @@ class AdminAction(db.Model):
 
 
 def init_db(app):
-    """Initialize database and create tables"""
+    """Initialize database and create tables.
+    NOTE: Must be called from within an active app_context — do NOT open
+    another app_context inside here (causes nested-context warnings).
+    """
+    import os
     db.init_app(app)
-    
-    with app.app_context():
-        # Create all tables
-        db.create_all()
-        
-        # Create default admin user if not exists (check by email and username)
-        admin_by_email = User.query.filter_by(email='admin@healspace.ai').first()
-        admin_by_user = User.query.filter_by(username='admin').first()
-        
-        if not admin_by_email and not admin_by_user:
-            admin = User(
-                username='admin',
-                email='admin@healspace.ai',
-                role='admin',
-                is_active=True
-            )
-            admin.set_password('Admin@123456')
-            db.session.add(admin)
-            db.session.commit()
-            print("✓ Default admin user created (email: admin@healspace.ai, password: Admin@123456)")
-        elif admin_by_user and not admin_by_email:
-            # Username exists but email is different? Update it or just skip
-            pass
-        elif not admin_by_user and admin_by_email:
-            # Email exists but username is different? Update the username
-            admin_by_email.username = 'healspace_admin'
-            admin_by_email.set_password('HealSpace@123')
-            db.session.commit()
-            print("✓ Updated existing user with admin email to new admin username.")
-        
-        print("✓ Database initialized successfully")
+
+    # Create all tables
+    db.create_all()
+
+    # Read admin password from env var — never hardcode secrets in source
+    admin_password = os.getenv('ADMIN_PASSWORD', '').strip()
+    if not admin_password:
+        # Generate a one-time random password if env var is missing
+        import secrets
+        admin_password = secrets.token_urlsafe(16)
+        print("⚠️  ADMIN_PASSWORD env var not set. A random admin password was generated.")
+        print("   → Set ADMIN_PASSWORD in Railway Variables for a fixed password.")
+
+    # Create default admin user if not exists (check by email and username)
+    admin_by_email = User.query.filter_by(email='admin@healspace.ai').first()
+    admin_by_user  = User.query.filter_by(username='admin').first()
+
+    if not admin_by_email and not admin_by_user:
+        admin = User(
+            username='admin',
+            email='admin@healspace.ai',
+            role='admin',
+            is_active=True
+        )
+        admin.set_password(admin_password)
+        db.session.add(admin)
+        db.session.commit()
+        print("✓ Default admin user created (email: admin@healspace.ai)")
+        # Password intentionally NOT printed — check Railway Variables
+    elif not admin_by_user and admin_by_email:
+        # Email exists but username changed — normalise
+        admin_by_email.username = 'admin'
+        db.session.commit()
+        print("✓ Admin username normalised.")
+
+    print("✓ Database initialized successfully")
 
 
 def seed_test_data(app):

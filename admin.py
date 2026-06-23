@@ -77,7 +77,7 @@ def users():
 @admin_required
 def user_detail(user_id):
     """View user details and history"""
-    user = User.query.get_or_404(user_id)
+    user = db.get_or_404(User, user_id)
     
     # Get user's chat history
     messages = Message.query.filter_by(user_id=user_id)\
@@ -125,7 +125,7 @@ def user_detail(user_id):
 @admin_required
 def toggle_user_status(user_id):
     """Activate or deactivate user"""
-    user = User.query.get_or_404(user_id)
+    user = db.get_or_404(User, user_id)
     
     if user.role == 'admin':
         flash('Cannot deactivate admin users.', 'danger')
@@ -147,7 +147,7 @@ def toggle_user_status(user_id):
 @admin_required
 def delete_user(user_id):
     """Delete user and all associated data"""
-    user = User.query.get_or_404(user_id)
+    user = db.get_or_404(User, user_id)
     
     if user.role == 'admin':
         flash('Cannot delete admin users.', 'danger')

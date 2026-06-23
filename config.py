@@ -10,12 +10,12 @@ class Config:
     """Base configuration"""
 
     # SECRET_KEY MUST be set as a Railway env var.
-    # If missing, a deterministic (but insecure) fallback is used and warned.
-    _raw_secret = os.getenv('SECRET_KEY', '')
+    # If missing, a truly random key is generated — but sessions won't survive restarts.
+    _raw_secret = os.getenv('SECRET_KEY', '').strip()
     if not _raw_secret:
-        import hashlib
-        _raw_secret = hashlib.sha256(b'healspace-default-insecure-key').hexdigest()
-        print("WARNING: SECRET_KEY env var not set! Sessions will be insecure. "
+        import secrets as _secrets
+        _raw_secret = _secrets.token_hex(32)
+        print("WARNING: SECRET_KEY env var not set! Sessions won't survive app restarts. "
               "Set SECRET_KEY in Railway Variables.")
     SECRET_KEY = _raw_secret
 
