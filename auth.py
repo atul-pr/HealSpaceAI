@@ -3,6 +3,7 @@ Authentication Module - User registration, login, and access control
 """
 
 from functools import wraps
+from urllib.parse import urlparse
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from models import db, User, AdminAction
@@ -81,11 +82,16 @@ def login():
             db.session.commit()
             
             # Log user in
-            login_user(user, remember=remember)
+            login_user(user, remember=bool(remember))
             flash(f'Welcome back, {user.username}!', 'success')
-            
-            # Redirect to appropriate dashboard
-            next_page = request.args.get('next')
+
+            # Prevent open-redirect attacks: only allow relative URLs
+            next_page = request.args.get('next', '')
+            if next_page:
+                parsed = urlparse(next_page)
+                # Reject if it has a scheme (http://) or netloc (evil.com)
+                if parsed.scheme or parsed.netloc:
+                    next_page = None
             if next_page:
                 return redirect(next_page)
             elif user.is_admin():
@@ -107,7 +113,7 @@ def register():
     
     if request.method == 'POST':
         username = request.form.get('username', '').strip()
-        email = request.form.get('email', '').strip()
+        email = request.form.get('email', '').strip().lower()  # normalize email
         password = request.form.get('password', '')
         confirm_password = request.form.get('confirm_password', '')
         

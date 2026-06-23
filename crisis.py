@@ -7,11 +7,7 @@ import re
 import logging
 
 # Set up logging
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s [%(levelname)s] %(name)s: %(message)s',
-    handlers=[logging.StreamHandler()]  # stdout — Railway captures this
-)
+logger = logging.getLogger(__name__)
 
 # Crisis keyword patterns (case-insensitive)
 SUICIDE_KEYWORDS = [
@@ -47,30 +43,28 @@ def detect_crisis(message):
         return False, None
         
     message_lower = message.lower().strip()
-    logging.debug(f"Detecting crisis in: '{message_lower}'")
     
     # Check for false positive contexts first
     for pattern in EXCLUSION_PATTERNS:
         if re.search(pattern, message_lower):
-            logging.debug(f"Exclusion match: {pattern}")
             return False, None
     
     # Check for suicide indicators
     for keyword in SUICIDE_KEYWORDS:
         if keyword in message_lower:
-            logging.debug(f"Suicide match: {keyword}")
+            logger.info(f"Crisis detected: suicide")
             return True, 'suicide'
     
     # Check for self-harm indicators
     for keyword in SELF_HARM_KEYWORDS:
         if keyword in message_lower:
-            logging.debug(f"Self-harm match: {keyword}")
+            logger.info(f"Crisis detected: self_harm")
             return True, 'self_harm'
     
     # Check for extreme distress (multiple keywords = higher risk)
     distress_count = sum(1 for keyword in EXTREME_DISTRESS_KEYWORDS if keyword in message_lower)
     if distress_count >= 2:
-        logging.debug(f"Extreme distress count: {distress_count}")
+        logger.info(f"Crisis detected: extreme_distress (count={distress_count})")
         return True, 'extreme_distress'
     
     return False, None

@@ -136,7 +136,7 @@ def test_groq_api():
         print("   → Get a free key at https://console.groq.com")
         return False
 
-    print(f"\nAPI Key: {api_key[:10]}...{api_key[-4:]}")
+    print(f"\nAPI Key: {api_key[:8]}...")
 
     response = call_groq_api("I'm feeling stressed about my work. Any advice?")
 

@@ -102,8 +102,11 @@ def health_check():
 
 
 @app.route('/api/status')
+@login_required
 def api_status():
-    """Debug endpoint — shows which API keys are loaded (safe: shows only first 8 chars)."""
+    """Debug endpoint — admin-only, shows which API keys are loaded."""
+    if not current_user.is_admin():
+        return jsonify({'error': 'forbidden'}), 403
     groq_key = os.getenv('GROQ_API_KEY', '').strip()
     hf_key   = os.getenv('HF_API_KEY', '').strip()
     secret   = os.getenv('SECRET_KEY', '').strip()
@@ -153,13 +156,20 @@ def chat_page():
 def chat():
     """Handle chat messages with crisis detection and AI response"""
     try:
-        data = request.get_json()
+        data = request.get_json(silent=True)
+        if not data:
+            return jsonify({'error': 'Invalid request'}), 400
+
         user_message = data.get('message', '').strip()
-        
+
         if not user_message:
             return jsonify({'error': 'Empty message'}), 400
-        
-        # Save user message to database (only if logged in)
+
+        # Limit message length to prevent API token abuse
+        if len(user_message) > 2000:
+            user_message = user_message[:2000]
+
+        # Save user message to database
         if current_user.is_authenticated:
             message = Message(
                 user_id=current_user.id,
@@ -168,15 +178,10 @@ def chat():
             )
             db.session.add(message)
             db.session.commit()
-        
+
         # CRITICAL: Check for crisis BEFORE AI response
         is_crisis, crisis_type = detect_crisis(user_message)
-        
-        try:
-            with open('chat_debug.log', 'a') as f:
-                f.write(f"{datetime.now()}: msg='{user_message}', is_crisis={is_crisis}, type={crisis_type}\n")
-        except Exception:
-            pass  # Railway has read-only FS — ignore log errors
+        print(f"[chat] user={current_user.id} crisis={is_crisis} type={crisis_type}")
         
         if is_crisis:
             # Log crisis event (only if logged in)
